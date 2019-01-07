@@ -1,0 +1,67 @@
+<h3>{{viewTitle}}</h3>
+
+<form action="/boletim" method="POST" autocomplete="off">
+<input type="hidden" name="_id" value="{{boletim._id}}">
+
+    <div class="form-row">
+        <div class="form-group col-md-6">
+            <label>Mes</label>
+            <input type="text" class="form-control" name= "mes" placeholder="Mes" readonly="true" value="{{boletim.mes}}">
+        
+            
+        </div>
+        <div class="form-group col-md-6">
+            <label>Ano</label>
+            <input type="text" class="form-control" name= "ano" placeholder="Ano" readonly="true" value="{{boletim.ano}}">
+            
+        </div>
+    </div>
+
+    <div class= "form-group">
+        <label>Rubrica</label>
+        <input type="text" class="form-control" name= "rubrica" placeholder="Rubrica" readonly="true" value="{{boletim.rubrica}}">
+        
+    </div>
+    <div class= "form-group">
+        <label>Conduta</label>
+        <input type="text" class="form-control" name= "conduta" placeholder="Conduta" readonly="true" value="{{boletim.conduta}}">
+        
+    </div>
+
+    <div class="form-row">
+        <div class="form-group col-md-6">
+            <label>Latitude</label>
+            <input type="text" class="form-control" name= "latitude" placeholder="Latitude" readonly="true" value="{{boletim.latitude}}">
+            
+        </div>
+        <div class="form-group col-md-6">
+            <label>Longitude</label>
+            <input type="text" class="form-control" name= "longitude" placeholder="Longitude" readonly="true" value="{{boletim.longitude}}">
+            
+        </div>
+    </div>
+
+    <div class= "form-group">
+        <label>Cidade</label>
+        <input type="text" class="form-control" name= "cidade" placeholder="Cidade" readonly="true" value="{{boletim.cidade}}">
+        
+    </div>
+
+    <div class="form-row">
+        <div class="form-group col-md-6">
+            <label>Logradouro</label>
+            <input type="text" class="form-control" name= "logradouro" placeholder="Logradouro"  readonly="true" value="{{boletim.logradouro}}">
+            
+        </div>
+        <div class="form-group col-md-6">
+            <label>Numero Logradouro</label>
+            <input type="text" class="form-control" name= "numero_logradouro" placeholder="Numero Logradouro" readonly="true" value="{{boletim.numero_logradouro}}">
+            
+        </div>
+    </div>
+
+
+    <div class="form-group">
+        <a class="btn btn-secondary" href="/boletim/list"><i class="fa fa-list-alt"></i> View All</a>
+    </div>
+</form>

@@ -1,0 +1,75 @@
+<h3>{{viewTitle}}</h3>
+
+<form action="/boletim" method="POST" autocomplete="off">
+<input type="hidden" name="_id" value="{{boletim._id}}">
+
+    <div class="form-row">
+        <div class="form-group col-md-6">
+            <label>Mes</label>
+            <input type="text" class="form-control" name= "mes" placeholder="Mes" value="{{boletim.mes}}">
+            <div class="text-danger">
+            {{boletim.mesError}}</div>
+        </div>
+        <div class="form-group col-md-6">
+            <label>Ano</label>
+            <input type="text" class="form-control" name= "ano" placeholder="Ano" value="{{boletim.ano}}">
+            <div class="text-danger">
+            {{boletim.anoError}}</div>
+        </div>
+    </div>
+
+    <div class= "form-group">
+        <label>Rubrica</label>
+        <input type="text" class="form-control" name= "rubrica" placeholder="Rubrica" value="{{boletim.rubrica}}">
+        <div class="text-danger">
+            {{boletim.rubricaError}}</div>
+    </div>
+    <div class= "form-group">
+        <label>Conduta</label>
+        <input type="text" class="form-control" name= "conduta" placeholder="Conduta" value="{{boletim.conduta}}">
+        
+    </div>
+
+    <div class="form-row">
+        <div class="form-group col-md-6">
+            <label>Latitude</label>
+            <input type="text" class="form-control" name= "latitude" placeholder="Latitude" value="{{boletim.latitude}}">
+            <div class="text-danger">
+            {{boletim.latitudeError}}</div>
+        </div>
+        <div class="form-group col-md-6">
+            <label>Longitude</label>
+            <input type="text" class="form-control" name= "longitude" placeholder="Longitude" value="{{boletim.longitude}}">
+            <div class="text-danger">
+            {{boletim.longitudeError}}</div>
+        </div>
+    </div>
+
+    <div class= "form-group">
+        <label>Cidade</label>
+        <input type="text" class="form-control" name= "cidade" placeholder="Cidade" value="{{boletim.cidade}}">
+        <div class="text-danger">
+            {{boletim.cidadeError}}</div>
+    </div>
+
+    <div class="form-row">
+        <div class="form-group col-md-6">
+            <label>Logradouro</label>
+            <input type="text" class="form-control" name= "logradouro" placeholder="Logradouro" value="{{boletim.logradouro}}">
+            <div class="text-danger">
+            {{boletim.logradouroError}}</div>
+        </div>
+        <div class="form-group col-md-6">
+            <label>Numero Logradouro</label>
+            <input type="text" class="form-control" name= "numero_logradouro" placeholder="Numero Logradouro" value="{{boletim.numero_logradouro}}">
+            <div class="text-danger">
+            {{boletim.numero_logradouroError}}</div>
+        </div>
+    </div>
+
+
+    <div class="form-group">
+        <button type="submit" class="btn btn-info"><i class="fa fa-database"></i> Submit</button>
+        <a class="btn btn-secondary" href="/boletim/list"><i class="fa fa-list-alt"></i> View All</a>
+    </div>
+</form>

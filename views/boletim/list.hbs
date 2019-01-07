@@ -1,0 +1,25 @@
+<h3> Lista de Boletins  <a class="btn btn-secondary" href="/boletim"><i class="fa fa-plus"></i> Criar Novo</a></h3>
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th>Mes</th>
+            <th>Ano</th>
+            <th>Rubrica</th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        {{#each list}}
+        <tr>
+            <td>{{this.mes}}</td>
+            <td>{{this.ano}}</td>
+            <td>{{this.rubrica}}</td>
+            <td>
+                <a href="/boletim/{{this._id}}"><i class="fa fa-pencil fa-lg" aria-hidden="true"></i></a>
+                <a href="/boletim/details/{{this._id}}">Mais Detalhes</a>
+                
+            </td>
+        </tr>
+        {{/each}}
+    </tbody>
+</table>
